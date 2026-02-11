@@ -1,0 +1,69 @@
+[System]
+Name='pendulum_ctrl_triangular'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='error'
+Range=[-3.14159265358979 3.14159265358979]
+NumMFs=5
+MF1='neglarge':'trapmf',[-3.14159265358979 -3.14159265358979 -1.5707963267949 -0.785398163397448]
+MF2='negsmall':'trimf',[-1.5707963267949 -0.785398163397448 0]
+MF3='zero':'trimf',[-0.785398163397448 0 0.785398163397448]
+MF4='possmall':'trimf',[0 0.785398163397448 1.5707963267949]
+MF5='poslarge':'trapmf',[0.785398163397448 1.5707963267949 3.14159265358979 3.14159265358979]
+
+[Input2]
+Name='chang_in_error'
+Range=[-100 100]
+NumMFs=5
+MF1='neglarge':'trapmf',[-100 -100 -0.785398163397448 -0.392699081698724]
+MF2='negsmall':'trimf',[-0.785398163397448 -0.392699081698724 0]
+MF3='zero':'trimf',[-0.392699081698724 0 0.392699081698724]
+MF4='possmall':'trimf',[0 0.392699081698724 0.785398163397448]
+MF5='poslarge':'trapmf',[0.392699081698724 0.785398163397448 100 100]
+
+[Output1]
+Name='force'
+Range=[-30 30]
+NumMFs=5
+MF1='neglarge':'trimf',[-30 -20 -10]
+MF2='negsmall':'trimf',[-20 -10 0]
+MF3='zero':'trimf',[-10 0 10]
+MF4='possmall':'trimf',[0 10 20]
+MF5='poslarge':'trimf',[10 20 30]
+
+[Rules]
+1 1, 5 (1) : 1
+2 1, 5 (1) : 1
+3 1, 5 (1) : 1
+4 1, 4 (1) : 1
+5 1, 3 (1) : 1
+1 2, 5 (1) : 1
+2 2, 5 (1) : 1
+3 2, 4 (1) : 1
+4 2, 3 (1) : 1
+5 2, 2 (1) : 1
+1 3, 5 (1) : 1
+2 3, 4 (1) : 1
+3 3, 3 (1) : 1
+4 3, 2 (1) : 1
+5 3, 1 (1) : 1
+1 4, 4 (1) : 1
+2 4, 3 (1) : 1
+3 4, 2 (1) : 1
+4 4, 1 (1) : 1
+5 4, 1 (1) : 1
+1 5, 3 (1) : 1
+2 5, 2 (1) : 1
+3 5, 1 (1) : 1
+4 5, 1 (1) : 1
+5 5, 1 (1) : 1
