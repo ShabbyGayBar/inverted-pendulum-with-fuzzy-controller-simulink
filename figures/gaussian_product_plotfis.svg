@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32.8083mm" height="43.7444mm"
+ viewBox="0 0 93 124"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>MATLAB, The MathWorks, Inc. Version 25.2.0.3123386 R2025b Update 3</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(0.75,0,0,0.75,-170.25,-68)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M226,89 L351,89 L351,255 L226,255 L226,89"/>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(7.5e-05,0,0,7.5e-05,-170.25,-68)"
+font-family="MS Shell Dlg 2" font-size="8.25" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M2.46e+06,940000 L2.46e+06,2.31e+06 L3.33e+06,2.31e+06 L3.33e+06,940000 L2.46e+06,940000"/>
+</g>
+
+<g fill="#212121" fill-opacity="1" stroke="#212121" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.75,0,0,0.75,1.5,119.75)"
+font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#212121" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+ >gaussian_product (25)</text>
+</g>
+
+<g fill="#212121" fill-opacity="1" stroke="#212121" stroke-opacity="1" stroke-width="2.66667" stroke-linecap="square" stroke-linejoin="round" transform="matrix(0.75,0,0,0.75,-170.25,-68)"
+font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="246,231 333,231 " />
+<polyline fill="none" vector-effect="none" points="246,94 333,94 " />
+<polyline fill="none" vector-effect="none" points="246,231 246,94 " />
+<polyline fill="none" vector-effect="none" points="333,231 333,94 " />
+</g>
+
+<g fill="#212121" fill-opacity="1" stroke="#212121" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.75,0,0,0.75,27.375,51.25)"
+font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#212121" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+ >Mamdani</text>
+</g>
+
+<g fill="#212121" fill-opacity="1" stroke="#212121" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.75,0,0,0.75,33,64)"
+font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#212121" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="TeX Gyre Termes" font-size="13" font-weight="400" font-style="normal" 
+ >Type 1</text>
+</g>
+</g>
+</svg>

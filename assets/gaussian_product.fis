@@ -1,0 +1,69 @@
+[System]
+Name='gaussian_product'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='prod'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='error'
+Range=[-3.14159265358979 3.14159265358979]
+NumMFs=5
+MF1='neglarge':'gauss2mf',[0.333527891039812 -3.14159265358979 0.333527891039812 -1.5707963267949]
+MF2='negsmall':'gaussmf',[0.333527891039812 -0.785398163397448]
+MF3='zero':'gaussmf',[0.333527891039812 0]
+MF4='possmall':'gaussmf',[0.333527891039812 0.785398163397448]
+MF5='poslarge':'gauss2mf',[0.333527891039812 1.5707963267949 0.333527891039812 3.14159265358979]
+
+[Input2]
+Name='chang_in_error'
+Range=[-1 1]
+NumMFs=5
+MF1='neglarge':'gauss2mf',[0.166763945519906 -100 0.166763945519906 -0.785398163397448]
+MF2='negsmall':'gaussmf',[0.166763945519906 -0.392699081698724]
+MF3='zero':'gaussmf',[0.166763945519906 0]
+MF4='possmall':'gaussmf',[0.166763945519906 0.392699081698724]
+MF5='poslarge':'gauss2mf',[0.166763945519906 0.785398163397448 0.166763945519906 100]
+
+[Output1]
+Name='force'
+Range=[-30 30]
+NumMFs=5
+MF1='neglarge':'gaussmf',[4.2466090014401 -20]
+MF2='negsmall':'gaussmf',[4.2466090014401 -10]
+MF3='zero':'gaussmf',[4.2466090014401 0]
+MF4='possmall':'gaussmf',[4.2466090014401 10]
+MF5='poslarge':'gaussmf',[4.2466090014401 20]
+
+[Rules]
+1 1, 5 (1) : 1
+2 1, 5 (1) : 1
+3 1, 5 (1) : 1
+4 1, 4 (1) : 1
+5 1, 3 (1) : 1
+1 2, 5 (1) : 1
+2 2, 5 (1) : 1
+3 2, 4 (1) : 1
+4 2, 3 (1) : 1
+5 2, 2 (1) : 1
+1 3, 5 (1) : 1
+2 3, 4 (1) : 1
+3 3, 3 (1) : 1
+4 3, 2 (1) : 1
+5 3, 1 (1) : 1
+1 4, 4 (1) : 1
+2 4, 3 (1) : 1
+3 4, 2 (1) : 1
+4 4, 1 (1) : 1
+5 4, 1 (1) : 1
+1 5, 3 (1) : 1
+2 5, 2 (1) : 1
+3 5, 1 (1) : 1
+4 5, 1 (1) : 1
+5 5, 1 (1) : 1
