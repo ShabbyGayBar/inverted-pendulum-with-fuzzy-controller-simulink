@@ -42,6 +42,7 @@ Open and run one of the live scripts in the `scripts/` directory:
 - `scripts/gaussian_product.mlx` - Gaussian membership function controller
 - `scripts/triangular_25rules.mlx` - Triangular 25-rule controller
 - `scripts/triangular_49rules.mlx` - Triangular 49-rule controller
+- `scripts/main.mlx` - All of the above
 
 These live scripts will:
 - Load the corresponding fuzzy inference system
@@ -77,6 +78,7 @@ inverted-pendulum-with-fuzzy-controller-simulink/
 │   └── *_sim_waveform.svg            # Simulation waveform results
 │
 ├── scripts/                          # MATLAB Live Scripts
+│   ├── main.mlx                      # All FIS controller script
 │   ├── gaussian_product.mlx          # Gaussian controller script
 │   ├── triangular_25rules.mlx        # 25-rule controller script
 │   └── triangular_49rules.mlx        # 49-rule controller script
@@ -123,14 +125,8 @@ The `figures/` directory contains automatically generated plots including:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Copyright (c) 2026 Brian Li
+This project is licensed under the [MIT LICENSE](LICENSE).
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgments
-
-This project demonstrates the application of fuzzy logic control to a classic control theory problem, showing how fuzzy inference can handle nonlinear and uncertain systems effectively.
