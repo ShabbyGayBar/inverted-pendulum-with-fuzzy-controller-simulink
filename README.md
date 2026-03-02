@@ -35,16 +35,16 @@ The inverted pendulum is a nonlinear, unstable system that requires continuous c
 
 ### Running the Simulations
 
-#### Option 1: Using Live Scripts (Recommended)
+#### Option 1: Using MATLAB Scripts (Recommended)
 
-Open and run one of the live scripts in the `scripts/` directory:
+Open and run one of the MATLAB scripts in the `scripts/` directory:
 
-- `scripts/gaussian_product.mlx` - Gaussian membership function controller
-- `scripts/triangular_25rules.mlx` - Triangular 25-rule controller
-- `scripts/triangular_49rules.mlx` - Triangular 49-rule controller
-- `scripts/main.mlx` - All of the above
+- `scripts/gaussian_product.m` - Gaussian membership function controller
+- `scripts/triangular_25rules.m` - Triangular 25-rule controller
+- `scripts/triangular_49rules.m` - Triangular 49-rule controller
+- `scripts/main.m` - All of the above
 
-These live scripts will:
+These MATLAB scripts will:
 - Load the corresponding fuzzy inference system
 - Run the simulation
 - Generate visualization plots
@@ -77,11 +77,11 @@ inverted-pendulum-with-fuzzy-controller-simulink/
 │   ├── *_plotmf_*.svg                # Membership function plots
 │   └── *_sim_waveform.svg            # Simulation waveform results
 │
-├── scripts/                          # MATLAB Live Scripts
-│   ├── main.mlx                      # All FIS controller script
-│   ├── gaussian_product.mlx          # Gaussian controller script
-│   ├── triangular_25rules.mlx        # 25-rule controller script
-│   └── triangular_49rules.mlx        # 49-rule controller script
+├── scripts/                          # MATLAB & Live Scripts
+│   ├── main.m                        # All FIS controller script
+│   ├── gaussian_product.m            # Gaussian controller script
+│   ├── triangular_25rules.m          # 25-rule controller script
+│   └── triangular_49rules.m          # 49-rule controller script
 │
 ├── simulink/                         # Simulink models
 │   ├── pendulum.slx                  # Main pendulum model
